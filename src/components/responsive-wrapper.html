@@ -1,0 +1,24 @@
+<script props>
+  module.exports = {
+    fColWidth: props.fColWidth,
+    sColWidth: props.sColWidth | 0,
+    tColWidth: props.tColWidth | 0,
+  };
+</script>
+
+<table class="w-full">
+  <content />
+  <tr>
+    <td class="bg-red-600 [[fColWidth]] sm:w-full sm:inline-block align-top">
+      <slot:column1 />
+    </td>
+
+    <td class="bg-green-600 [[sColWidth]] sm:w-full sm:inline-block align-top">
+      <slot:column2 />
+    </td>
+
+    <td class="bg-blue-600 [[tColWidth]] sm:w-full sm:inline-block align-top">
+      <slot:column3 />
+    </td>
+  </tr>
+</table>

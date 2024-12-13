@@ -1,0 +1,90 @@
+<!-- devider -->
+
+<!-- use different width and leading -->
+<table role="separator">
+  <tr>
+    <td class="w-[330px] align-center-table">
+      <div class="bg-red leading-[1px] text-[1px]">&zwj;</div>
+    </td>
+  </tr>
+</table>
+
+<!-- underline -->
+
+<a
+  href="mailto:warsaw.office%40companyr.com?subject="
+  class="[text-decoration:underline]"
+  >warsaw.office@company.com</a
+>
+
+<!-- unordered or ordered list -->
+
+<!-- use numbers or other symbols to style order -->
+
+<!-- If you need the text to not go under the period but be next to it use this. -->
+
+<table>
+  <tr>
+      <td class="align-top text-black">•</td>
+      <td class="pl-[15px] text-black">Text</td>
+  </tr>
+  <tr>
+      <td class="align-top pt-[20px] text-black">•</td>
+      <td class="pl-[15px] pt-[20px] text-black">Text</td>
+  </tr>
+</table>
+
+<!-- If you want the text to go under the period use this -->
+
+<table>
+  <tr>
+    <td class="leading-[20px] text-[12px]">
+      <span>•</span> &nbsp; Κατάσταση εμβολιασμού: Η τρέχουσα μελέτη
+      περιελάμβανε εμβολιασμένους.<br />
+      <br />
+      • &nbsp; Κατάσταση εμβολιασμού: Η τρέχουσα μελέτη περιελάμβανε
+      εμβολιασμένους.<br />
+      <br />
+    </td>
+  </tr>
+</table>
+
+<!-- responsive-wrapper -->
+<table class="w-full">
+  <tr>
+    <td class="sm:w-full sm:inline-block align-top"></td>
+
+    <td class="sm:w-full sm:inline-block align-top"></td>
+  </tr>
+</table>
+
+<!-- responsive-wrapper right to left-->
+<table class="w-full" dir="rtl">
+  <tr>
+    <td class="sm:w-full sm:inline-block align-top" dir="ltr"></td>
+    <td class="sm:w-full sm:inline-block align-top" dir="ltr"></td>
+  </tr>
+</table>
+
+<!-- superscripts if sup doesn't work in proper way-->
+<span class="leading-0 text-[9px] align-[4px]">your content</span>
+
+<!-- BUTTON COMPONENT -->
+<!-- button component with required props (minimum setup)-->
+<x-button width="250" height="40" leading="24" padding="8px 20px"
+  >CLICK ME
+</x-button>
+
+<!-- button component with most offen necessary props (recomennded setup)-->
+
+<x-button
+  width="250"
+  height="40"
+  leading="24"
+  padding="8px 20px"
+  rounded="100"
+  bgColor="#FF6347"
+  href="#"
+  class="font-bold text-white text-[13px] xs:w-full"
+  >CLICK ME
+</x-button>

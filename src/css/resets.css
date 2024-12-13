@@ -1,0 +1,46 @@
+/*
+ * Here is where you can add your global email CSS resets.
+ *
+ * We use a custom, email-specific CSS reset, instead
+ * of Tailwind's web-optimized `base` layer.
+ *
+ * Styles defined here will be inlined.
+*/
+html,
+body,
+table,
+td,
+p,
+div,
+img,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  @apply max-w-full leading-none align-middle;
+  border: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: inherit !important;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+sup {
+  vertical-align: 5px;
+  line-height: 0;
+}
+
+

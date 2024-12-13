@@ -1,0 +1,40 @@
+<script props>
+  module.exports = {
+    class: props.class,
+    alt: props.alt || "",
+    href: props.href || "#",
+    imgUrl: props.imgUrl,
+  };
+</script>
+
+<if condition="page.env !== 'production'">
+  <if condition="href !== '#'"
+    ><a href="[[href]]">
+      <img draggable="false" src="[[imgUrl]]" class="[[class]]" alt="[[alt]]" />
+    </a>
+  </if>
+  <else>
+    <img draggable="false" src="[[imgUrl]]" class="[[class]]" alt="[[alt]]" />
+  </else>
+</if>
+
+<if condition="page.env === 'production'">
+  <if condition="href !== '#'"
+    ><a href="[[href]]">
+      <img
+        draggable="false"
+        src="images/[[imgUrl]]"
+        class="[[class]]"
+        alt="[[alt]]"
+      />
+    </a>
+  </if>
+  <else>
+    <img
+      draggable="false"
+      src="images/[[imgUrl]]"
+      class="[[class]]"
+      alt="[[alt]]"
+    />
+  </else>
+</if>

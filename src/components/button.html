@@ -1,0 +1,50 @@
+<script props>
+  // Please look at READ ME before first use
+  module.exports = {
+    width: props.width || "100",
+    leading: props.leading || "20",
+    padding: props.padding || "10px 20px",
+    height: props.height || "40",
+    bgColor: props.bgColor || "#000000",
+    rounded: props.rounded || "100",
+    href: props.href || "#",
+    borderWidth: props.borderWidth || "0",
+    borderColor: props.borderColor || "#000000",
+    verticalAlign: props.verticalAlign || "middle",
+    class: props.class
+  };
+</script>
+
+<outlook>
+<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=[[href]] style="width:[[`${width}px`]];height:[[`${height}px`]];v-text-anchor:[[verticalAlign]]" arcsize=[[`${rounded/height*100}%`]] fillcolor=[[bgColor]] strokecolor=[[borderColor]] strokeweight=[[`${borderWidth}px`]]>
+<v:textbox>
+<w:anchorlock/>
+<center class="[[class]] font-primary">
+
+<content/>
+
+</center>
+</v:textbox>
+</v:roundrect>
+</outlook>
+
+<a
+  href=[[href]]
+  class=[[class]]
+  style="
+    font-family:Arial,Helvetica,sans-serif;
+    width: [[`${width}px`]];
+    line-height: [[`${leading}px`]];
+    border-style: solid;
+    border-color: [[borderColor]];
+    background-color: [[bgColor]];
+    border-width: [[`${borderWidth}px`]];
+    border-radius: [[`${rounded}px`]];
+    display: inline-block;
+    text-align: center;
+    padding: [[padding]];
+    mso-hide: all;
+  "
+>
+<content/>
+</a>

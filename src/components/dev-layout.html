@@ -1,0 +1,40 @@
+<!-- Don't use it as component - this is only UI plugin for developement envirnoment. To use it type "npm run dev:frame" on terminal -->
+
+<div class="font-sans">
+  <div class="bg-blue-50 flex sticky top-0 w-full">
+    <img
+      src="../images/image-2.png"
+      alt="logo"
+      class="w-full max-w-[150px]"
+    />
+    <nav class="py-2 w-full">
+      <h1 class="text-center pr-[80px]">RTE MAIZZLE DEV SERVER</h1>
+      <ul class="flex list-none gap-4 p-0 justify-center pr-[80px]">
+        <li>
+          <button
+            class="toggler frags-toggler p-3 bg-blue-500 text-white font-bold border-none rounded-md cursor-pointer hover:bg-blue-300 disabled:bg-gray-300 disabled:cursor-not-allowed"
+          >
+            seperate fragments
+          </button>
+        </li>
+        <li>
+          <button
+            class="toggler tokens-toggler p-3 bg-blue-500 text-white font-bold border-none rounded-md cursor-pointer hover:bg-blue-300 disabled:bg-gray-300 disabled:cursor-not-allowed"
+          >
+            replace tokens
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <section class="flex m:block">
+    <aside class="px-8 pb-2 min-h-[100vh] m:min-h-auto min-w-[2px] bg-blue-50">
+      <div
+        class="fragment-togglers flex flex-col m:flex-row items-center m:gap-1 flex-wrap"
+      ></div>
+    </aside>
+    <div class="mx-auto max-w-[600px] py-2">
+      <div class="preview"><content /></div>
+    </div>
+  </section>
+</div>

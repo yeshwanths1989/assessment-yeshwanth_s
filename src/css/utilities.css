@@ -1,0 +1,31 @@
+/*
+ * Here is where you can define your custom utility classes.
+ *
+ * We wrap them in the `utilities` @layer directive, so
+ * that Tailwind moves them to the correct location.
+ *
+ * More info:
+ * https://tailwindcss.com/docs/functions-and-directives#layer
+*/
+
+@layer utilities {
+  .break-word {
+    word-break: break-word;
+  }
+}
+
+/* For displaying cutom text in preheader. Veeva will add .AE_customText class if we use customText token, so we check if it is added and rewrite with !important to show. It will disappear when sending */
+.pre-header_cT_span:has(.AE_customText) {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  overflow: unset !important;
+}
+
+.pre-header_cT_span > select {
+  @apply absolute top-0 left-0 w-full text-[16px];
+}
+
+table select {
+  max-width: 300px;
+}
