@@ -1,6 +1,7 @@
 # Email development assignment
 
-1. Fork this repository (https://github.com/pxpcee/email-dev-assignment) and name it using this pattern `assessment-your_full_name`, for example `assessment-john_doe`
+1. Import this repository (https://github.com/pxpcee/email-dev-assignment) into your own repository and name it using this pattern `assessment-your_full_name`, for example `assessment-john_doe`. Please do not fork the repo!
+   1. How to import - https://docs.github.com/en/migrations/importing-source-code/using-github-importer/importing-a-repository-with-github-importer#importing-a-repository-with-github-importer
 2. Clone your forked repository and build an email using the Maizzle framework in this boilerplate.
     1. Email design for build: https://www.figma.com/design/cIzCXiADiNh9EUrCiVlbps/Generic-Layout?node-id=0-1&node-type=canvas
 3. Commit regularly to your forked repository but don't polute the history.
@@ -325,32 +326,3 @@ Each time you need to add an image, you will need to use the <x-image/> tag to d
   ```markup
   <span class="text-[9px] [line-height:0] [vertical-align:6px]">1</span>
   ```
-
-# Useful scripts:
-
-Clone this starter:
-
-```bash
-git clone (paste here ssh or https code)
-```
-
-
-Install dependencies: You will need to navigate into the correct folder (`cd ~/PCF-XXX/`) and run the following script:
-
-```
-npm install
-```
-
-
-Start local development (live preview of the email in a browser):
-
-```
-npm run dev
-```
-
-
-Command to generate the final file (the one you will use to test the email):
-
-```
-npm run build
-```
