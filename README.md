@@ -3,7 +3,7 @@
 1. Fork this repository (https://github.com/pxpcee/email-dev-assignment) and name it using this pattern `assessment-your_full_name`, for example `assessment-john_doe`
 2. Clone your forked repository and build an email using the Maizzle framework in this boilerplate.
     1. Email design for build: https://www.figma.com/design/cIzCXiADiNh9EUrCiVlbps/Generic-Layout?node-id=0-1&node-type=canvas
-3. Commit regularly to your forked repository.
+3. Commit regularly to your forked repository but don't polute the history.
 4. When you are done with the development, please push all the changes to your repository and send us a link to it.
 
 ## Evaluation Criteria
